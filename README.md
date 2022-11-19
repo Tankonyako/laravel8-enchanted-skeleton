@@ -28,6 +28,10 @@ composer install
 ```
 php artisan storage:link
 ```
+``copy .env.example .env`` or on Linux ``cp .env.example .env``
+```
+php artisan key:generate
+```
 ```
 php artisan migrate:auto
 ```
