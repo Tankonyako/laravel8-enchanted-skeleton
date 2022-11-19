@@ -13,6 +13,11 @@
 * [helpers.php](app/helpers.php) from the box
 * a alias for`php artisan` (only Windows)
 
+### Download
+```
+git clone https://github.com/Tankonyako/laravel8-enchanted-skeleton.git
+```
+or download all code and put to some directory.
 ### Install
 ```
 npm install
