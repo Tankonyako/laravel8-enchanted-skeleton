@@ -1,0 +1,30 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "serve": "concurrently \"php artisan serve\" \"npm run watch\"",
+        "serve-debug": "concurrently \"php -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=9000 -dxdebug.remote_host=127.0.0.1 artisan serve\" \"npm run watch\"",
+        "ide-helper": "concurrently \"php artisan ide-helper:generate\" \"php artisan ide-helper:models --no-interaction\" \"php artisan ide-helper:meta\""
+    },
+    "devDependencies": {
+        "axios": "^0.21",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.56.1",
+        "sass-loader": "^12.1.0"
+    },
+    "dependencies": {
+        "browser-sync": "^2.27.10",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "concurrently": "^7.5.0",
+        "css-mqpacker": "^7.0.0"
+    }
+}

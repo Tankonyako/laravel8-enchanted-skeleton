@@ -1,0 +1,11 @@
+html body p {
+  color: black;
+}
+html body p.on-full-responsive {
+  color: gray;
+}
+@media (max-width: 600px) {
+  html body p.on-full-responsive {
+    font-size: 20vw;
+  }
+}

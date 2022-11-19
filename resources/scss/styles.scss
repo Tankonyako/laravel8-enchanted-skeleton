@@ -1,0 +1,23 @@
+@import "parts/colors";
+
+html
+{
+    body
+    {
+        p
+        {
+            color: $black;
+        }
+
+        p.on-full-responsive
+        {
+            color: $gray;
+            @media (max-width: 600px)
+                // Example for inline media query
+                // In production build all media queries will compile in one
+            {
+                font-size: 20vw;
+            }
+        }
+    }
+}
